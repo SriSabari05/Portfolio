@@ -192,8 +192,8 @@ nav a:hover {
 
 .image-wrapper.right {
     left: 75%;
-    transform: translate(-50%, -50%) rotateY(-12deg) rotateX(4deg);
-    /* Subtle 3D tilt in final position */
+    transform: translate(-50%, -50%) rotateY(0deg) rotateX(0deg);
+    /* Straightened position */
 }
 
 .placeholder-image {
@@ -249,6 +249,7 @@ h1 {
     align-items: flex-start;
     gap: 10px;
     /* Added gap for spacing */
+    text-align: left;
 }
 
 .intro-text {
@@ -261,9 +262,12 @@ h1 {
 
 .highlight {
     color: var(--accent-yellow);
-    font-family: 'Bangers', cursive;
-    font-size: 9rem;
-    /* Slightly larger for emphasis */
+    font-family: 'Lilita One', cursive;
+    font-size: 9.5rem;
+    /* Slightly larger to match font weight */
+    -webkit-text-stroke: 0;
+    text-shadow: 4px 4px 0 #000;
+    letter-spacing: 3px;
 }
 
 p {
@@ -1318,36 +1322,64 @@ p {
         height: auto !important;
         min-height: 100vh;
         overflow-y: auto;
-        perspective: none !important;
+        perspective: 1000px !important;
+        /* Restored perspective for mobile */
     }
 
     .image-wrapper {
         position: relative !important;
         top: auto !important;
         left: auto !important;
-        transform: none !important;
-        margin-bottom: 25px !important;
-        width: 260px !important;
-        height: 350px !important;
+        margin: 0 auto 30px !important;
+        width: 280px !important;
+        height: 380px !important;
         flex-shrink: 0;
-        box-shadow: 8px 8px 0 #000 !important;
+        box-shadow: 10px 10px 0 #000 !important;
+        /* Animation setup */
+        opacity: 0;
+        transform: translateY(100px) rotateY(0deg) scale(0.8);
+        animation: mobileHeroEntry 1.8s cubic-bezier(0.19, 1, 0.22, 1) forwards !important;
+        transform-style: preserve-3d !important;
+        z-index: 10 !important;
+        transition: transform 1.2s cubic-bezier(0.19, 1, 0.22, 1), left 1.2s cubic-bezier(0.19, 1, 0.22, 1) !important;
     }
 
-    .image-wrapper.center,
+    @keyframes mobileHeroEntry {
+        0% {
+            transform: translateY(100px) rotateY(0deg) scale(0.8);
+            opacity: 0;
+        }
+
+        60% {
+            transform: translateY(-20px) rotateY(540deg) scale(1.05);
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(0) rotateY(720deg) scale(1);
+            opacity: 1;
+        }
+    }
+
+    /* Step-by-step mobile sequence matching desktop */
+    .image-wrapper.center {
+        transform: translate(0, 0) rotateY(0deg) scale(1) !important;
+        opacity: 1 !important;
+    }
+
     .image-wrapper.right {
-        transform: rotateY(-8deg) rotateX(2deg) !important;
-        /* Re-enabled subtle rotation for mobile */
-        left: auto !important;
-        top: auto !important;
+        transform: translate(0, 0) rotateY(0deg) rotateX(0deg) scale(1) !important;
+        opacity: 1 !important;
     }
 
     .content {
         position: relative !important;
         top: auto !important;
         left: auto !important;
-        transform: none !important;
-        opacity: 1 !important;
-        visibility: visible !important;
+        transform: translateY(20px) !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        transition: opacity 1s ease, transform 1s ease !important;
         max-width: 100% !important;
         padding: 0 !important;
         display: flex !important;
@@ -1355,11 +1387,19 @@ p {
         align-items: center !important;
     }
 
+    .content.show {
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: translateY(0) !important;
+    }
+
     h1 {
         font-size: 3.5rem !important;
         text-align: center !important;
         margin-bottom: 15px !important;
         line-height: 1 !important;
+        align-items: center !important;
+        /* Keep centered on mobile */
     }
 
     .intro-text {
@@ -1368,7 +1408,8 @@ p {
     }
 
     .highlight {
-        font-size: 4.5rem !important;
+        font-size: 3.5rem !important;
+        /* Adjusted for mobile readability with the new font */
     }
 
     p {
