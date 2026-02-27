@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saba's Folio</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Bangers&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logo">Almost Gudboy</div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="mobile-only-socials">
+                <a href="https://github.com/SriSabari05" target="_blank" class="social-icon"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/srisabaris5824" target="_blank" class="social-icon"><i
+                        class="fa-brands fa-linkedin"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container" id="home">
+        <div class="image-wrapper" id="heroImage">
+            <!-- User Image -->
+            <img src="assets/images/home_image.png" alt="Sri Sabari" class="hero-image">
+        </div>
+
+        <div class="content" id="heroContent">
+            <h1><span class="intro-text">Introducing</span> <span class="highlight">Sri Sabari</span></h1>
+            <p>Technical Trainer <br>
+                Aspiring Software QA </p>
+
+            <div class="buttons">
+                <div class="main-buttons">
+                    <a href="#about" class="btn primary">About Me</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
+                <a href="assets/docs/QA Resume.pdf" download="QA Resume.pdf" class="btn resume-btn">
+                    <i class="fa-solid fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section id="about" class="about-section">
+        <div class="about-split">
+            <div class="about-image-wrapper">
+                <img src="assets/images/Animated image.png" alt="Sri Sabari Animated" class="about-img">
+            </div>
+            <div class="about-content-wrapper">
+                <h2 class="section-title">About Me</h2>
+                <p>
+                    I am an Electronics and Communication Engineer with specialization in software development and
+                    automation engineering. I develop scalable and maintainable software applications with a focus
+                    on clean architecture and object-oriented design principles. <br><br>
+
+                    Simultaneously, I work on automation strategies that can improve the reliability of software,
+                    optimize testing, and minimize manual intervention. I work on every project with analytical
+                    skills, attention to detail, and a passion for delivering reliable and high-quality software.
+                    <br><br>
+
+                    With a passion for learning and problem-solving, I work towards developing software systems that
+                    are not only useful but reliable and ready for the future.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="skills-bg-fillers">
+            <span class="filler filler-1">{ }</span>
+            <span class="filler filler-2">&lt;/&gt;</span>
+            <span class="filler filler-3">#</span>
+            <span class="filler filler-4">;</span>
+        </div>
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+            <!-- Frontend Card -->
+            <div class="skill-category-card" style="--accent-color: var(--primary-color);">
+                <div class="category-header">
+                    <span class="category-icon">🌐</span>
+                    <h3>Frontend</h3>
+                </div>
+                <div class="skill-list">
+                    <div class="skill-entry">
+                        <span class="entry-icon">📜</span>
+                        <div class="entry-info">
+                            <h4>HTML5</h4>
+                            <p>Semantic structure, accessibility, SEO basics</p>
+                        </div>
+                    </div>
+                    <div class="skill-entry">
+                        <span class="entry-icon">🎨</span>
+                        <div class="entry-info">
+                            <h4>CSS3 / Bootstrap</h4>
+                            <p>Responsive layouts, modern UI design</p>
+                        </div>
+                    </div>
+                    <div class="skill-entry">
+                        <span class="entry-icon">⚡</span>
+                        <div class="entry-info">
+                            <h4>JavaScript (ES6+)</h4>
+                            <p>DOM manipulation, async logic</p>
+                        </div>
+                    </div>
+                    <div class="skill-entry">
+                        <span class="entry-icon">⚛️</span>
+                        <div class="entry-info">
+                            <h4>React.js</h4>
+                            <p>Component-based UI, hooks, state handling</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend Card -->
+            <div class="skill-category-card" style="--accent-color: var(--accent-blue);">
+                <div class="category-header">
+                    <span class="category-icon">⚙️</span>
+                    <h3>Backend / Programming</h3>
+                </div>
+                <div class="skill-list">
+                    <div class="skill-entry">
+                        <span class="entry-icon">☕</span>
+                        <div class="entry-info">
+                            <h4>Java</h4>
+                            <p>OOP concepts, Data-Structure concepts</p>
+                        </div>
+                    </div>
+                    <div class="skill-entry">
+                        <span class="entry-icon">🐍</span>
+                        <div class="entry-info">
+                            <h4>Python</h4>
+                            <p>Fundamentals concepts</p>
+                        </div>
+                    </div>
+                    <div class="skill-entry">
+                        <span class="entry-icon">🟢</span>
+                        <div class="entry-info">
+                            <h4>Node.js</h4>
+                            <p>API handling, server-side logic</p>
+                        </div>
+                    </div>
+                    <div class="skill-entry">
+                        <span class="entry-icon">🗄️</span>
+                        <div class="entry-info">
+                            <h4>MySQL</h4>
+                            <p>CRUD operations, schema design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools Card -->
+            <div class="skill-category-card" style="--accent-color: var(--accent-yellow);">
+                <div class="category-header">
+                    <span class="category-icon">🛠️</span>
+                    <h3>Tools & Platforms</h3>
+                </div>
+                <div class="skill-list">
+                    <div class="skill-entry">
+                        <span class="entry-icon">🚀</span>
+                        <div class="entry-info">
+                            <h4>Git & GitHub</h4>
+                            <p>Version control, collaboration</p>
+                        </div>
+                    </div>
+                    <div class="skill-entry">
+                        <span class="entry-icon">💻</span>
+                        <div class="entry-info">
+                            <h4>VS Code/IntellIJ</h4>
+                            <p>Primary development environment</p>
+                        </div>
+                    </div>
+                    <div class="skill-entry">
+                        <span class="entry-icon">🧪</span>
+                        <div class="entry-info">
+                            <h4>Selenium Web-Driver</h4>
+                            <p>Automated testing & verification</p>
+                        </div>
+                    </div>
+                    <div class="skill-entry">
+                        <span class="entry-icon">🎨</span>
+                        <div class="entry-info">
+                            <h4>TestNG</h4>
+                            <p>Testing framework</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="projects" class="projects-section reveal">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="card-inner">
+                    <div class="card-front" style="--accent-color: var(--primary-color);">
+                        <div class="card-content">
+                            <span class="project-icon">🛍️</span>
+                            <h3>VIBE STORE</h3>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <div class="card-content">
+                            <h3>E-Commerce Web</h3>
+                            <p>Minimalized and limited functionalities E-Commerce Landing page</p>
+                            <a href="https://github.com/SriSabari05/VibeStore" target="_blank" class="project-link">View
+                                Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="card-inner">
+                    <div class="card-front" style="--accent-color: var(--accent-blue);">
+                        <div class="card-content">
+                            <span class="project-icon">🧪</span>
+                            <h3>Testing</h3>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <div class="card-content">
+                            <h3>DemoQA Site Checking</h3>
+                            <p>Selenium based script used for testing the working functions of the site.</p>
+                            <a href="https://github.com/SriSabari05/AutomationTesting" target="_blank"
+                                class="project-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="card-inner">
+                    <div class="card-front" style="--accent-color: var(--accent-yellow);">
+                        <div class="card-content">
+                            <span class="project-icon">💰</span>
+                            <h3>Tracker</h3>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <div class="card-content">
+                            <h3>Expense Tracker</h3>
+                            <p>Java and SQl (JDBC) modelized expense tracker, which is use by compiler.</p>
+                            <a href="https://github.com/SriSabari05/Expense-Tracker" target="_blank"
+                                class="project-link">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="card-inner">
+                    <div class="card-front" style="--accent-color: var(--primary-color);">
+                        <div class="card-content">
+                            <span class="project-icon">🚧</span>
+                            <h3>Soon</h3>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <div class="card-content">
+                            <h3>Website Checking.</h3>
+                            <p>The project is in under Construction!!</p>
+                            <a href="#" class="project-link">Soon!!!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="contact" class="contact-section reveal">
+        <div class="background-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="contact-card">
+            <div class="spider-hanging">
+                <div class="spider-web"></div>
+                <div class="spider-icon">🕷️</div>
+            </div>
+            <h2>Let's Talk</h2>
+            <p>Have a project in mind? Let's build something amazing together.</p>
+            <div class="contact-links">
+                <a href="#" class="contact-link">Email Me</a>
+                <div class="social-icons">
+                    <a href="https://github.com/SriSabari05" target="_blank" class="icon"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/srisabaris5824" target="_blank" class="icon"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://instagram.com/almost_gudboy" target="_blank" class="icon"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm" action="https://formspree.io/f/xrealvvq" method="POST">
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                <textarea name="message" id="message" placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit" class="send-btn">Send Message</button>
+                <div id="formMessage" class="contact-message"></div>
+            </form>
+        </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
